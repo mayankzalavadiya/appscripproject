@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 220px;
+}
+
+.black-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.lorem {
+    display: flex;
+    align-items: center;
+}
+
+.lorem-1{
+    display: none;
+}
+
+.lorem-p {
+    color: white;
+    font-size: 14px;
+    
+}
+
+.header-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1400px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo-img {
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-name {
+    flex: 1;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.logo-search {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+ }
+
+
+.header-btn {
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.header-btn:hover {
+    color: #000;
+}
+
+.select-btn {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-close,.hamburger-open{
+    display: none;
+}
+
+.opacityy{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.header-name{
+    cursor: pointer;
+}
+
+.header-type {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    max-width: 700px;
+    margin: auto;
+}
+
+@media (max-width: 850px) {
+
+    .header-type {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        transition: max-height 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 10;
+      }
+
+      .hamburger-open{
+        display: block;
+        font-size: 25px;
+        
+      }
+      .hamburger-close{
+        display: block;
+        font-size: 25px;
+        z-index:10;
+      }
+
+      .mobile-menu{
+        position: absolute;
+        top: 0;
+        width: 150px;
+        height: 550px;
+        background-color: rgb(197,194,194);
+        animation: open 0.5s linear forwards;
+        z-index:1;
+      }
+
+      .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        margin: 100px 0px 100px 10px;
+      }
+
+      .mobile-menu ul li{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        gap:20px;
+        color: rgb(37,33,33);
+      }
+      
+      @keyframes open {
+         0%{
+            left: -100px;
+         }
+         100%{
+            left:0px;
+         }
+      }
+
+      .header-type.open {
+        max-height: 200px; 
+      }
+      
+      .header-name {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+      }
+      
+      .header-name:hover {
+        background-color: #f0f0f0;
+      }
+
+    .black-header {
+        justify-content: flex-start;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-center{
+        height: 80px;
+    }
+
+    .lorem{
+        display: none;
+    }
+
+    .lorem-1{
+        display: block;
+        color: white;
+        
+    }
+
+    .header{
+        height: 170px;
+    }
+
+    .black-header .lorem-p:nth-child(2) {
+        display: none;
+    }
+
+    .header-center {
+        justify-content: space-between;
+    }
+
+    .select-btn {
+        display: none;
+    }
+
+    .hed {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+        margin-right: 14px;
+    }
+
+    .logo-search {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-type {
+        display: none;
+    }
+
+    .opacityy{
+        display: block;
+        margin: 15px;
+    }
+
+    .logo-img{
+        padding-left: 10px;
+    }
+}

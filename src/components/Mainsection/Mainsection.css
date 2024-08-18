@@ -1,0 +1,151 @@
+.main-section {
+    margin: auto;
+    max-width: 1400px;
+    padding: 20px;
+    
+  }
+  
+  .mainsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 30px;
+  }
+  
+  .item-total {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+  
+  .item-total div:last-child {
+    cursor: pointer;
+    
+  }
+  
+  .item-section {
+    display: flex;
+  }
+  
+  .left-section {
+    width: 20%;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+  }
+
+  .hide{
+    border-bottom: 1px solid black;
+  }
+  
+  .right-section {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .custom{
+     display: flex;
+     flex-direction: row;
+     gap:5px;
+     border-bottom: 1px solid black;
+     padding-bottom:20px;
+  }
+
+  .check-box{
+    width: 20px;
+    height: 20px;
+  }
+
+  .drop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .ideal_for{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+  }
+
+  .unselect{
+    border-bottom: 1px solid gray;
+    color: gray;
+
+  }
+
+  .type{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+  }
+
+  .category{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+  }
+
+  .select{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border: none;
+  }
+
+  .filter{
+    display: none;
+  }
+
+  .right-section.full-width {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 850px) {
+    .item-total {
+      display: none;
+    }
+  
+    .left-section {
+      display: none;
+    }
+  
+    .filter {
+      display: block;
+    }
+  
+    .right-section {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .card {
+      margin-bottom: 10px;
+      height: 550px;
+      gap:5px;
+    }
+  }
+  
